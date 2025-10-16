@@ -12,10 +12,10 @@ x = []
 y = []
 
 ##VARIABLES THAT MAY BE ALTERED##
-delta = 0.000001
-tolerance = 0.000001
-limit = 500
-c = [1,1] # c values are guesses; indeces c[0] = m/slope; c[1] = b/ y-intercept
+delta = 0.000001      # A tiny step size used for numerically calculating derivatives (slopes).
+tolerance = 0.000001  # How close to zero the derivative needs to be before stopping; controls the precision of the answer.
+limit = 500           # Safety break to prevent the program from running forever.
+c = [1,1]             # Initial guesses for the coefficients (e.g., m and b).
 path = '/usr/local/google/home/mattashton/Documents/pyTutoring/tyler-sessions/newtons-method/36-over-x.csv' #make file path a variable
 
 ## CREATE INSTRUCTIONS PROMPT AT BEGINNING OF PROGRAM ##
