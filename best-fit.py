@@ -1,5 +1,9 @@
-##INSERT BLOCK COMMENTS ##
-##BLOCK COMMENT FOR INITIAL INSTRUCTIONS##
+"""
+Finds best-fit curve coefficients for (x, y) data by minimizing squared error with Newton's method.
+1. Set the `path` variable to your CSV file (must have 'x' and 'y' columns).
+2. Define your model (e.g., `c[0]*x + c[1]`) in the `def f(x, c):` function.
+3. Set initial coefficient guesses in the `c` list (e.g., `c = [1, 1]` for 2 coefficients).
+"""
 #import csv library to read in csv files
 import csv
 
