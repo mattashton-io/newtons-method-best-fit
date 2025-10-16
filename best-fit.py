@@ -18,19 +18,16 @@ limit = 500           # Safety break to prevent the program from running forever
 c = [1,1]             # Initial guesses for the coefficients (e.g., m and b).
 path = '/usr/local/google/home/mattashton/Documents/pyTutoring/tyler-sessions/newtons-method/36-over-x.csv' #make file path a variable
 
-## CREATE INSTRUCTIONS PROMPT AT BEGINNING OF PROGRAM ##
 # y = mx+b -> line equation
 def f(x, c):
     return c[0]/x + c[1] # return mx + b
 
-## DETAIL FORMAT OF THE CSV (number of columns) ##
 #read in csv file with data values
 with open(path, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         x.append(float(row['x']))
         y.append(float(row['y']))
-
 
 #squaring distances from real values (y_data) to expected
 def sq_dist(y_line, y_data):
@@ -61,7 +58,6 @@ def calc_dist_derv():
         for j in range(len(derv[0])):
             derv[i][j] = ((dist[i][j+1] - dist[i][j]) / delta)  
     return derv, dist   
-
 
 #zero-finder function 
 #input derv, dist and index
