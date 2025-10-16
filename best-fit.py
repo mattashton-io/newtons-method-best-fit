@@ -1,3 +1,4 @@
+# Developed by Matt Ashton (Google Public Sector) and Tyler Witte, PhD (Purdue Fort Wayne)
 """
 Finds best-fit curve coefficients for (x, y) data by minimizing squared error with Newton's method.
 1. Set the `path` variable to your CSV file (must have 'x' and 'y' columns).
